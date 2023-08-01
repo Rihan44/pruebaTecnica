@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* GENERALES */
+:root {
+    --colorMorado: rgba(46, 0, 57, 1);
+    --colorBlanco: #FFFFFF;
+    --colorGrisClaro: #E3E3E3;
+    --colorGrisOscuro: #676767;
+}
+
+
+p {
+    margin: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    height: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
+    header {
+        display: flex;
+        width: 100%;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        height: 48px;
+        align-items: center;
+    }
+
+    h1 {
+        font-weight: 900;
+        color: var(--colorMorado);
+        font-size: 20px;
+        align-self: center;
+        margin-bottom: 0px;
+        margin-left: 10px;
+    }
+
+    span.icono {
+        fill: #2E0039;
+        margin-left: 529px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    /* FIN HEADER */
+
+    /* MAIN */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    /* CARTA/FORMULARIO */
+
+    section.carta {
+        width: 50%;
+    }
+
+    div.card {
+        background: var(--colorMorado);
+        color: var(--colorBlanco);
+        border-radius: 21px;
+        width: 717px;
+        height: 193px;
+        padding: 10px;
+        padding-left: 20px;
+    }
+
+    h5.card-title {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    form {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    form div.select_opciones {
+        flex: 1; 
+        margin-right: 10px; 
+        display: flex;
+        width: 30%;
+    }
+
+    form div.select_opciones select {
+        width: 80%;
+        border: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
+        background: none;
+        color: var(--colorBlanco);
+        font-size: 14px;
+    }
+
+    form div.select_opciones select {
+        background: var(--colorMorado);
+        color: var(--colorBlanco);
+    }
+
+    form div.select_opciones button.btn_cambio{
+        height: 24px;
+        width: 24px;
+        border: none;
+        background: none;
+    }
+
+    form div.select_opciones button.btn_cambio span.icono_cambio {
+        color: var(--colorBlanco);
+        margin-left: 15px;
+    }
+
+    form div.input_numero {
+        flex: 1; 
+        text-align: right; 
+        margin-right: 20px;
+    }
+
+    form div.input_numero span {
+        margin-left: 0px;
+        font-size: 14px;
+    }
+
+    form div.input_numero input{
+        border: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
+        background: none;
+        color: var(--colorBlanco);
+        outline: none;
+        text-align: right;
+        font-size: 14px;
+    }
+
+    div.mostrar {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+
+    div.mostrar div.boton_guardar button {
+        background: none;
+        border: none;
+        flex: 1; 
+        margin-right: 10px; 
+    }
+
+    div.mostrar div.boton_guardar button span.corazon {
+        width: 24px;
+        height: 24px;
+        color: var(--colorBlanco);
+    }
+
+    div.mostrar div.titulo_conversion {
+        flex: 1; 
+        text-align: right; 
+        margin-right: 30px;
+    }
+
+    div.mostrar div.titulo_conversion h3 {
+        font-size: 24px;
+        line-height: 36px;
+        margin-right: 20px;
+    }
+
+    /* FIN CARTA/FORMULARIO */
+
+    /* SECCION GUARDADOS */
+    section.guardados {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-top: 80px;
+    }
+
+    section.guardados h4 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        color: rgba(103, 103, 103, 1);
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+
+    section.guardados div.medidas_guardadas {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    section.guardados div.medidas_guardadas div.guardado {
+        width: 36%;
+        display: flex;
+        background: rgba(227, 227, 227, 1);
+        border-radius: 10px;
+        margin: 10px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px 10px 3px 20px;
+    }
+
+    section.guardados div.medidas_guardadas div.guardado p {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400px;
+        color: rgba(103, 103, 103, 1);
+    }
+
+    section.guardados div.medidas_guardadas div.guardado button {
+        border: none;
+        background: none;
+        margin-top: 5px;
+        color: rgba(103, 103, 103, 1);
+    }
+
+    /* FOOTER */
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: var(--colorMorado);
+        color: var(--colorBlanco);
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+        height: 39px;
+        align-items: center;
+    }
+
+    /* FIN FOOTER */
+} 
+
+/* REPSONSIVE */
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    /* HEADER */
+    header {
+        display: flex;
+        width: 100%;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        height: 48px;
+        align-items: center;
+    }
+
+    h1 {
+        font-weight: 900;
+        color: var(--colorMorado);
+        font-size: 20px;
+        align-self: center;
+        margin-bottom: 0px;
+        margin-left: 10px;
+    }
+
+    span.icono {
+        fill: #2E0039;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+
+    /* FIN HEADER */
+
+    /* MAIN */
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.carta {
+        display: flex;
+        justify-content: center;
+    }
+
+    section.carta div.card {
+        background: var(--colorMorado);
+        color: var(--colorBlanco);
+        border-radius: 21px;
+        width: 349px;
+        height: 209px;
+        padding: 10px;
+        padding-top: 0px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form div.select_opciones {
+        width: 100%;
+    }
+
+    form div.select_opciones select {
+        width: 70%;
+        border: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
+        background: none;
+        color: var(--colorBlanco);
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    form div.select_opciones button.btn_cambio{
+        height: 24px;
+        width: 24px;
+        border: none;
+        background: none;
+    }
+
+    form div.select_opciones button.btn_cambio span.icono_cambio {
+        color: var(--colorBlanco);
+        margin-left: 15px;
+    }
+
+    form div.input_numero input{
+        width: 70%;
+        border: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
+        background: none;
+        color: var(--colorBlanco);
+        outline: none;
+        text-align: right;
+        font-size: 14px;
+    }
+
+    form div.input_numero span {
+        margin-left: 15px;
+    }
+
+    div.mostrar {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+
+    div.mostrar div.boton_guardar button {
+        background: none;
+        border: none;
+        flex: 1; 
+        margin-right: 30px; 
+    }
+
+    div.mostrar div.boton_guardar button span.corazon {
+        width: 24px;
+        height: 24px;
+        color: var(--colorBlanco);
+    }
+
+    div.mostrar div.titulo_conversion {
+        flex: 1; 
+        text-align: right; 
+        margin-right: 10px;
+    }
+
+    div.mostrar div.titulo_conversion h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    div.mostrar div.titulo_conversion span {
+        font-size: 16px;
+    }
+
+    section.guardados {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    section.guardados h4 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        color: rgba(103, 103, 103, 1);
+        margin-left: 30px;
+        margin-bottom: 0px;
+        align-self: flex-start;
+    }
+
+    section.guardados div.medidas_guardadas {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    section.guardados div.medidas_guardadas div.guardado {
+        width: 100%;
+        display: flex;
+        background: rgba(227, 227, 227, 1);
+        border-radius: 10px;
+        margin: 10px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px 10px 3px 20px;
+    }
+
+    section.guardados div.medidas_guardadas div.guardado p {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400px;
+        color: rgba(103, 103, 103, 1);
+    }
+
+    section.guardados div.medidas_guardadas div.guardado button {
+        border: none;
+        background: none;
+        margin-top: 5px;
+        color: rgba(103, 103, 103, 1);
+    }
+    /* FIN MAIN */
+
+    /* FOOTER */
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: var(--colorMorado);
+        color: var(--colorBlanco);
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+        height: 39px;
+        align-items: center;
+    }
+
+    /* FIN FOOTER */
+}
